@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://367c-2406-7400-63-f7b5-15bb-7ecf-6348-d7c8.ngrok-free.app/bin/franklin.delivery/Venky2423/edstest/main
+    url: https://e2ee-49-205-85-181.ngrok-free.app/bin/franklin.delivery/Venky2423/edstest/main
     type: "markup"
     suffix: ".html"
