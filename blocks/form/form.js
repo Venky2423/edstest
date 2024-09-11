@@ -187,7 +187,7 @@ function createRadioOrCheckboxGroup(fd) {
     const input = field.querySelector('input');
     input.id = id;
     input.dataset.fieldType = fd.fieldType;
-    input.name = fd.id; // since id is unique across radio/checkbox group
+    input.name = fd.name;
     input.checked = Array.isArray(fd.value) ? fd.value.includes(value) : value === fd.value;
     if ((index === 0 && type === 'radio') || type === 'checkbox') {
       input.required = fd.required;
@@ -479,7 +479,7 @@ export async function fetchForm(pathname) {
   // get the main form
   let data;
   let path = pathname;
-  if (path.startsWith(window.location.origin)) {
+  if (path.startsWith(window.location.origin) && !path.endsWith('.json')) {
     if (path.endsWith('.html')) {
       path = path.substring(0, path.lastIndexOf('.html'));
     }
