@@ -1,5 +1,2 @@
 mountpoints:
-  /:
-    url: https://author-p133911-e1313554.adobeaemcloud.com/bin/franklin.delivery/Venky2423/edstest/main
-    type: "markup"
-    suffix: ".html"
+  /: https://adobe-my.sharepoint.com/:f:/r/personal/macman_adobe_com/Documents/ConversationalChannelResearch?csf=1&web=1&e=mHXwxa

@@ -146,6 +146,7 @@
     {
       "id": "form",
       "components": [
+        "captcha",
         "checkbox",
         "checkbox-group",
         "date-input",
@@ -162,6 +163,7 @@
         "panel",
         "plain-text",
         "radio-group",
+        "rating",
         "telephone-input",
         "text-input",
         "tnc",
