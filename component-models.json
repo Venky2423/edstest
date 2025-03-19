@@ -3513,10 +3513,10 @@
             "valueType": "string"
           },
           {
-            "component": "text",
+            "component": "number",
             "name": "default",
             "label": "Default Value",
-            "valueType": "string"
+            "valueType": "number"
           }
         ]
       },
