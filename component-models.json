@@ -2739,6 +2739,7 @@
             "name": "minOccur",
             "label": "Minimum repetitions",
             "valueType": "number",
+            "value": 1,
             "description": "Minimum number of times the panel appears on the form",
             "condition": {
               "===": [
@@ -4054,6 +4055,7 @@
             "name": "minOccur",
             "label": "Minimum repetitions",
             "valueType": "number",
+            "value": 1,
             "description": "Minimum number of times the accordion appears on the form"
           },
           {
