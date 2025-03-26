@@ -13,6 +13,7 @@
               "fd:viewType": "wizard",
               "enabled": true,
               "visible": true,
+              "minOccur": 1,
               "panel1": {
                 "jcr:title": "Item 1",
                 "fieldType": "panel",
