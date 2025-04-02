@@ -698,6 +698,37 @@
             "description": "Displayed when validation script fails."
           }
         ]
+      },
+      {
+        "component": "container",
+        "name": "accessibility",
+        "label": "Accessibility",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "select",
+            "name": "assistPriority",
+            "label": "Text for screen readers",
+            "valueType": "string",
+            "options": [
+              {
+                "name": "Custom Text",
+                "value": "custom"
+              },
+              {
+                "name": "Title",
+                "value": "label"
+              }
+            ]
+          },
+          {
+            "component": "text",
+            "name": "enumNull",
+            "label": "Custom Text",
+            "valueType": "string",
+            "multi": true
+          }
+        ]
       }
     ]
   },
@@ -2876,6 +2907,63 @@
             "valueType": "string"
           }
         ]
+      },
+      {
+        "component": "container",
+        "name": "accessibility",
+        "label": "Accessibility",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "select",
+            "name": "assistPriority",
+            "label": "Text for screen readers",
+            "valueType": "string",
+            "options": [
+              {
+                "name": "Custom Text",
+                "value": "custom"
+              },
+              {
+                "name": "Description",
+                "value": "description"
+              },
+              {
+                "name": "Title",
+                "value": "label"
+              },
+              {
+                "name": "Name",
+                "value": "name"
+              },
+              {
+                "name": "None",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "component": "text",
+            "name": "customText",
+            "label": "Custom Text",
+            "valueType": "string",
+            "condition": {
+              "==": [
+                {
+                  "var": "assistPriority"
+                },
+                "custom"
+              ]
+            }
+          },
+          {
+            "component": "text",
+            "name": "roleAttribute",
+            "label": "HTML role for screen reader to announce",
+            "valueType": "string",
+            "description": "HTML role attribute to apply to the component."
+          }
+        ]
       }
     ]
   },
@@ -3826,6 +3914,56 @@
             "valueType": "string",
             "label": "Pattern Error message",
             "description": "Error message shown when the pattern is not matched."
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "name": "accessibility",
+        "label": "Accessibility",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "select",
+            "name": "assistPriority",
+            "label": "Text for screen readers",
+            "valueType": "string",
+            "options": [
+              {
+                "name": "Custom Text",
+                "value": "custom"
+              },
+              {
+                "name": "Description",
+                "value": "description"
+              },
+              {
+                "name": "Title",
+                "value": "label"
+              },
+              {
+                "name": "Name",
+                "value": "name"
+              },
+              {
+                "name": "None",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "component": "text",
+            "name": "customText",
+            "label": "Custom Text",
+            "valueType": "string",
+            "condition": {
+              "==": [
+                {
+                  "var": "assistPriority"
+                },
+                "custom"
+              ]
+            }
           }
         ]
       }
